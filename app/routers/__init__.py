@@ -1,1 +1,1 @@
-from . import employees, attendance
+from . import employees, attendance, dashboard
