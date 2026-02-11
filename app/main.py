@@ -23,10 +23,12 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         settings.FRONTEND_URL,
+        "https://quess-frontend.vercel.app",
         "http://localhost:5173",
         "http://localhost:3000",
         "http://127.0.0.1:5173",
         "http://127.0.0.1:3000",
+        "*", # Allow all for debugging if necessary, or specific Vercel URL
     ],
     allow_credentials=True,
     allow_methods=["*"],
